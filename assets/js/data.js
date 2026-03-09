@@ -5,7 +5,7 @@ var currentPage='home',openFaq=null,worksFilter='All',contactSent=false;
 
 var WD=[
   {id:1,num:"01",year:"2025",title:"CrowdCure",cats:["AI/ML","Research","Web"],
-   desc:"AI-powered disaster relief coordination platform with multilingual NLP, real-time dashboards, and intelligent resource classification. Co-authored research paper presented at Paper-a-thon 2025, Microsoft Learn Student Ambassador Club.",
+   desc:"AI-powered disaster relief coordination platform with multilingual NLP, real-time dashboards, and intelligent resource classification. Authored research paper presented at Paper-a-thon 2025, Microsoft Learn Student Ambassador Club.",
    tags:["Python","TensorFlow","NLP","React","REST API","Azure"],
    bg:"linear-gradient(135deg,#030818,#091840)",em:"AI",link:"#",github:"https://github.com/RyomenSukuna25",
    arch:"Multilingual NLP Engine → Event Classifier → Resource Mapper → REST API → React Dashboard → Azure Deployment",
@@ -82,7 +82,7 @@ var ORIGIN=[
   {year:"2022",title:"B.E. Computer Science — Data Science",desc:"Enrolled at University of Mumbai. Carried mechanical thinking into algorithms. While classmates debugged, I was designing systems. Different mental model — same obsession with precision.",tag:"Transition"},
   {year:"2023",title:"Formula Bharat — Team Ethan Racing Electric",desc:"Rejoined engineering — but now as both domains. Contributed to the EV software stack and data systems for a formula-spec electric race car. The two worlds became one.",tag:"Crossover"},
   {year:"2024",title:"First Real AI Product",desc:"Built the Maize Disease Detector — a CNN model that works offline on low-end phones in farm fields. First time AI felt like it had a body and a purpose.",tag:"AI/ML"},
-  {year:"2025",title:"CrowdCure — Paper-a-thon 2025",desc:"Co-authored and presented an AI disaster relief platform at Microsoft Learn Student Ambassador Club. Multilingual NLP, real-time resource dashboards. The most complete thing I've built.",tag:"Research"}
+  {year:"2025",title:"CrowdCure — Paper-a-thon 2025",desc:"Authored and presented an AI disaster relief platform at Microsoft Learn Student Ambassador Club. Multilingual NLP, real-time resource dashboards. The most complete thing I've built.",tag:"Research"}
 ];
 
 var FD=[
@@ -90,6 +90,6 @@ var FD=[
   {q:"Are you open to internships or full-time roles?",a:"Yes — actively. Seeking internships and open to part-time/contract work while completing my B.E. Especially excited about AI engineering, full-stack development, and product teams building real-world tools."},
   {q:"What does your development process look like?",a:"Deep discovery first. Then: architecture, iterative builds with regular demos, and clean documented handoff. Good software is built through clarity and intention, not just speed."},
   {q:"Do you work with international clients?",a:"Absolutely. Based in Mumbai but work async-first. Comfortable collaborating remotely across time zones — location is rarely a barrier."},
-  {q:"Can you contribute to open-source or research?",a:"Yes, actively. Co-authored research on CrowdCure, contributed to Formula Bharat. If you're working on something with real impact, let's talk."},
+  {q:"Can you contribute to open-source or research?",a:"Yes, actively. Authored research on CrowdCure, contributed to Formula Bharat. If you're working on something with real impact, let's talk."},
   {q:"How do you handle revisions and feedback?",a:"I build feedback into the process, not bolt it on at the end. Regular demos mean you're never surprised. I prefer early, honest input over a polished mess at the finish line."}
 ];

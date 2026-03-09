@@ -62,7 +62,7 @@ function renderAbout(){
   var exGrid=div('exp-grid');
   exGrid.style.marginTop='32px';
   [
-    {y:'2025',t:'Research Paper — CrowdCure',c:'Microsoft Learn Student Ambassador Club',d:'Co-authored AI disaster relief platform research. Presented at Paper-a-thon 2025.'},
+    {y:'2025',t:'Research Paper — CrowdCure',c:'Microsoft Learn Student Ambassador Club',d:'Authored AI disaster relief platform research. Presented at Paper-a-thon 2025.'},
     {y:'2023–24',t:'Engineering Contributor',c:'Team Ethan Racing Electric — Formula Bharat',d:'Software & data systems for electric formula race car at national competitions.'},
     {y:'2024',t:'Web Developer Intern',c:'Siddhi Playground Equipments',d:'Built and maintained digital operations and client-facing web systems.'},
     {y:'Pursuing',t:'B.E. CS — Data Science',c:'University of Mumbai',d:'Specialising in AI/ML, system design, and full-stack engineering.'}
