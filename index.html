@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chirag Nagvekar — Full Stack Developer & AI Engineer from Mumbai. Building automation systems, ML tools, and hackathon-scale platforms."/>
+  <meta name="keywords" content="Full Stack Developer, AI Engineer, Mumbai, Python, React, TensorFlow, Portfolio"/>
+  <meta name="author" content="Chirag Nagvekar"/>
+  <meta property="og:title" content="Chirag Nagvekar — Full Stack Developer & AI Engineer"/>
+  <meta property="og:description" content="Building automation systems, ML tools, and hackathon-scale platforms. Mumbai, India."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <title>Chirag Nagvekar — Full Stack Developer & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/base.css"/>
+  <link rel="stylesheet" href="assets/css/ui.css"/>
+  <link rel="stylesheet" href="assets/css/hero.css"/>
+  <link rel="stylesheet" href="assets/css/components.css"/>
+  <link rel="stylesheet" href="assets/css/sections.css"/>
+  <link rel="stylesheet" href="assets/css/blog.css"/>
+  <link rel="stylesheet" href="assets/css/layout.css"/>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+  <div id="scroll-prog"></div>
+  <div id="cdot"></div>
+  <div id="cring"></div>
+  <div id="clbl"></div>
+  <div id="wprev" class="wprev off">
+    <div class="wprev-img" id="wprev-img"></div>
+    <div class="wprev-tag" id="wprev-tag"></div>
+  </div>
+  <div id="modal-bg" class="mbg" style="display:none" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-head">
+        <div class="modal-title" id="m-title"></div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img" id="m-img"></div>
+        <p class="modal-desc" id="m-desc"></p>
+        <div class="modal-tags" id="m-tags"></div>
+        <div style="font-size:8px;color:var(--ink3);letter-spacing:.14em;margin-bottom:14px;text-transform:uppercase" id="m-year"></div>
+        <div class="modal-links" id="m-links"></div>
+      </div>
+    </div>
+  </div>
+  <div class="mob" id="mob">
+    <a href="#" onclick="navTo('home');closeMob();return false;">Home</a>
+    <a href="#" onclick="navTo('works');closeMob();return false;">Works</a>
+    <a href="#" onclick="navTo('about');closeMob();return false;">About</a>
+    <a href="#" onclick="navTo('blog');closeMob();return false;">Blog</a>
+    <a href="#" onclick="navTo('certs');closeMob();return false;">Certs</a>
+    <a href="#" onclick="navTo('contact');closeMob();return false;">Contact</a>
+    <div class="mob-foot">chiragdnagvekar@email.com</div>
+  </div>
+  <div id="loader">
+    <div class="l-ghost" id="lg">0</div>
+    <div class="l-name" id="lname"></div>
+    <div class="l-line"></div>
+    <div class="l-pct" id="lpct">0%</div>
+    <div class="l-sub">Full Stack Developer · AI Engineer · Mumbai</div>
+  </div>
+  <nav id="main-nav">
+    <a href="#" class="nlogo" onclick="navTo('home');return false;"><span class="nlogo-dot"></span>CHIRAG.DEV</a>
+    <ul class="nlinks">
+      <li><a href="#" id="nl-home" class="act" onclick="navTo('home');return false;"><span class="nt">Home</span><span class="nb">Home</span></a></li>
+      <li><a href="#" id="nl-works" onclick="navTo('works');return false;"><span class="nt">Works</span><span class="nb">Works</span></a></li>
+      <li><a href="#" id="nl-about" onclick="navTo('about');return false;"><span class="nt">About</span><span class="nb">About</span></a></li>
+      <li><a href="#" id="nl-blog" onclick="navTo('blog');return false;"><span class="nt">Blog</span><span class="nb">Blog</span></a></li>
+      <li><a href="#" id="nl-certs" onclick="navTo('certs');return false;"><span class="nt">Certs</span><span class="nb">Certs</span></a></li>
+      <li><a href="#" id="nl-contact" onclick="navTo('contact');return false;"><span class="nt">Contact</span><span class="nb">Contact</span></a></li>
+    </ul>
+    <a href="#" class="ncta" onclick="navTo('contact');return false;"><span>Start a Project</span></a>
+    <button class="nburg" id="nburg" onclick="toggleMenu()"><span id="b1"></span><span id="b2"></span><span id="b3"></span></button>
+  </nav>
+  <div id="page-root" class="page"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/three-bg.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/observers.js"></script>
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/render-home.js"></script>
+  <script src="assets/js/render-pages.js"></script>
+  <script src="assets/js/router.js"></script>
+</body>
+</html>
